@@ -5,7 +5,7 @@
     testYolov8() async {
       img.Image? image = await _loadImage('assets/images/any_image.png');
       Interpreter interpreter =
-          await Interpreter.fromAsset('assets/models/yolov8s_float16.tflite');
+          await Interpreter.fromAsset('assets/models/yolov8n_float16.tflite');
       final input = _preProcess(image!);
     
       // output shape:
