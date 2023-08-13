@@ -10,7 +10,7 @@
     
       // output shape:
       // 1 : batch size
-      // 4 + 80: left, top, right, bottom and probabilities for each class
+      // 4 + 80: pixels from left of image to centre of detection, pixels from top of image to centre of detection, width, height and probabilities for each class
       // 8400: num predictions
       final output = List<num>.filled(1 * 84 * 8400, 0).reshape([1, 84, 8400]);
       int predictionTimeStart = DateTime.now().millisecondsSinceEpoch;
